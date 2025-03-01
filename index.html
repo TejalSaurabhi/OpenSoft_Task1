@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#current-involvements">Involvements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Dark Mode Toggle Button -->
+      <button class="dark-mode-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    </nav>
+
+    <!-- Hamburger Nav -->
+    <nav id="hamburger-nav">
+      <div class="logo">Tejal Saurabhi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li>
+            <a href="#current-involvements" onclick="toggleMenu()"
+              >Involvements</a
+            >
+          </li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <button class="dark-mode-btn" onclick="toggleDarkMode()">
+              Dark Mode
+            </button>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile" class="reveal-on-scroll">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tejal Saurabhi</h1>
+        <p class="section__text__p2">Student | Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resumeLast.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/tejal-saurabhi-1a96b7291/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/TejalSaurabhi'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="reveal-on-scroll">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.Tech. Metallurgical and Materials Engineering<br />
+                IIT Kharagpur 27
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello! I'm Tejal Saurabhi, a second-year undergraduate student at
+              IIT Kharagpur with a deep interest in technology. I have
+              experience working on real-world problems in Machine Learning, but
+              my main focus is Web Development, where I’ve built several
+              projects. I'm also keen on exploring Web3 and its potential to
+              reshape the internet. I enjoy learning new technologies and
+              building solutions that blend creativity with functionality.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal-on-scroll">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container skills-container">
+            <h2 class="experience-sub-title">TECHNICAL SKILLS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML & CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++ / Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal-on-scroll">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers projects-container">
+          <!-- Project One -->
+          <div class="details-container color-container project-card">
+            <div class="article-container project-image-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TejalSaurabhi/Rock-paper-scissors'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tejalsaurabhi.github.io/Rock-paper-scissors/Main.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- Project Two -->
+          <div class="details-container color-container project-card">
+            <div class="article-container project-image-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TejalSaurabhi/CQ--Assignment-1'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tejalsaurabhi.github.io/CQ--Assignment-1/Main.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- Project Three -->
+          <div class="details-container color-container project-card">
+            <div class="article-container project-image-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/TejalSaurabhi/Youtube-webpage'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tejalsaurabhi.github.io/Youtube-webpage/Main.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+
+    <!-- Current Involvements Section -->
+    <section id="current-involvements" class="reveal-on-scroll involvement-section">
+      <p class="section__text__p1 involvement-heading">What I'm Currently Doing</p>
+      <h1 class="title involvement-title">Current Involvements</h1>
+      <ul class="current-involvements-list">
+        <li><b>JPMC Quantitative Finance Mentee – </b>Working to build systems at the intersection of Mathematics, Coding and Finance</li>
+        <li><b>Secretary at Communiqué –</b> The Official Soft Skills and Personality Development society of IIT Kharagpur</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal-on-scroll">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="tejal.mahika@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/tejal-saurabhi-1a96b7291/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links footer-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#current-involvements">Involvements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-info">
+        <p>© 2023 Tejal Saurabhi. All Rights Reserved.</p>
+        <p class="footer-tagline">
+          Built with passion for web development.<br />
+          Find more on
+          <a href="https://github.com/TejalSaurabhi" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          or
+          <a href="https://www.linkedin.com/in/tejal-saurabhi-1a96b7291/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
